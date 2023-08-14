@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Bidhan Shrestha, Prabin GC, Sumi Lamichane, Suzzan Adhikari, Rojama Shakya.">
+	<meta name="description" content="About Bonsai Plant">
+	<meta name="keyword" content="Indoor Bonsai">
+    <link rel="icon" href="images/icon.png">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h4{
+            font-style: normal;
+            margin-bottom: 2%;
+            font-family:  Nunito, sans-serif;
+            font-size: 35px;
+            color: #5a5f70;
+            text-align:center;
+        }
+        span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            margin: 2px;
+            line-height: 30px;
+        }
+        img{
+            height: 250px;
+            width: 100%;
+        }
+        .bgimage{
+            position: absolute;
+        }
+
+        .detail{
+            padding-top:36px;
+            padding-bottom: 100px;
+            text-align: center;
+            position: relative;
+        }
+        .formdiv{
+            margin-left: 28%;
+        }
+        form{
+            width: 90%;
+            max-width: 600px;
+        }
+        input,textarea{
+            color: #5a5f70;
+            width: 100%;
+            padding:10px;
+            border:1.5px solid #3C6255;
+            border-radius: 5px;
+            font-size: 15px;
+            resize: none;
+        }
+        button {
+            color: #ffffff;
+            background-color: #3C6255;
+            font-size: 15px;
+            border: 0;
+            border-radius: 100px;
+            padding: 15px 30px;
+            cursor: pointer
+        }
+        button:hover {
+            background-color: rgb(236, 240, 227);
+            color: #000;
+        }
+        .footer1{
+    height: 300px;
+    background-color: rgb(233, 238, 235);
+}
+.foot{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    margin: 0;
+}
+.contactt{
+    color: #ffffff;
+    background-color: #3C6255;
+    font-size: 17px;
+    border:0px;
+    border-radius: 70px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contactt:hover {
+    color: #000;
+}
+
+.footer2{
+    background-color:rgb(233, 238, 235);
+    height: 80px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div><img src="images/bgg.jpg" class="bgimage"></div>
+        <div  class="detail">
+               <h4>Contact Details</h4>
+               <p><span>Address: </span>Old-Baneshwor, Kathmandu<br><span>Phone no: </span>+977 9868730025 <br><span>E-mail:</span> bidhanshrestha2019@gmail.com</p>
+        </div>
+    </div>
+    <h4 style="font-style: normal;margin-bottom: 2%; font-family:  Nunito, sans-serif; font-size: 35px;color: #5a5f70;text-align:center;">Lets Get in Touch</h4>
+       <div class="formdiv">
+        <form action="" class="form" name="formname" onsubmit="validateform()">
+        <input type="text" name="name" placeholder="Your Name"><br><br>
+           <input type="email" name="email" placeholder="Your Email"><br><br>
+           <textarea name="message" cols="30" rows="10" placeholder="Your message"></textarea><br><br>
+           <button type="submit" name="myButton">SEND MESSAGE</button>
+        </form>
+       </div>
+       <script>
+        function validateform(){
+            var n = document.forms["formname"]["name"].value;
+            var e = document.forms["formname"]["email"].value;
+            var m = document.forms["formname"]["message"].value;
+
+            if(n=='' || e=='' || m==''){
+                alert("Empty fields found.")
+            }else{
+                alert("Thank you for contacting.")
+            }
+        }
+       </script>
+</body>
+</html>

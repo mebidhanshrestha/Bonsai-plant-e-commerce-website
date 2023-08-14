@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="Bidhan Shrestha, Prabin GC, Sumi Lamichane, Suzzan Adhikari, Rojama Shakya.">
+	<meta name="description" content="About Bonsai Plant">
+	<meta name="keyword" content="Indoor Bonsai">
+  <title>Blog</title>
+  <link rel="icon" href="images/icon.png">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff;
+    }
+
+    p {
+      font-family: "Poppins", Helvetica, Arial, sans-serif;
+    }
+
+    nav {
+      height: 90px;
+      width: 100%;
+      background-color: #3C6255;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0px 50px 0px 100px;
+      z-index: 2;
+    }
+
+    .logo {
+      height: 70px;
+      width: 76px;
+    }
+
+    #logo {
+      color: rgb(249, 249, 102);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      font-weight: 500;
+      position: relative;
+      bottom: 26px;
+      left: 15px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      margin: 0px 12px;
+    }
+
+    .anav {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 40;
+      letter-spacing: 1px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .anav:hover,
+    .activee {
+      color: black;
+      background-color: rgb(236, 240, 227);
+    }
+
+    .footer1 {
+      height: 300px;
+      background-color: rgb(233, 238, 235);
+    }
+
+    .foot {
+      font-size: 14px;
+      text-decoration: none;
+      color: rgb(80, 80, 80);
+      margin: 0;
+    }
+
+    .contactt {
+      color: #ffffff;
+      background-color: #3C6255;
+      font-size: 17px;
+      border: 0px;
+      border-radius: 70px;
+      padding: 10px 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .contactt:hover {
+      color: #000;
+    }
+
+    .footer2 {
+      background-color: rgb(233, 238, 235);
+      height: 80px;
+      text-align: center;
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+
+
+    .ar-box {
+
+      margin: 7%;
+    }
+
+    .title h1 {
+      text-align: center;
+      margin-top: 16%;
+      font-size: 44px;
+
+      text-transform: uppercase;
+
+    }
+
+    .title p {
+      text-align: center;
+      font-size: 20px;
+      color: #421868;
+      letter-spacing: 2px;
+    }
+
+    .container h3 {
+      font-size: 217%;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .rec {
+      position: relative;
+      background-color: rgb(149, 205, 169);
+      padding: 31px;
+
+    }
+
+    .container {
+      display: flex;
+      gap: 10%;
+      margin-top: 1%;
+      margin-left: 2%;
+
+    }
+
+    .accordion {
+      cursor: pointer;
+      border: none;
+
+      padding: 5%;
+
+
+
+    }
+
+    .accordion img {
+      height: 323px;
+      width: 588px;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: rgb(106, 173, 121);
+
+    }
+
+    .content {
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      padding: 91px;
+      width: 652px;
+
+
+
+    }
+
+    .content p {
+      font-size: 20px;
+      line-height: 1.1;
+
+    }
+
+    .link {
+      font-size: 25px;
+      font-style: oblique;
+      margin-left: 75%;
+      margin-top: 13%;
+
+    }
+
+    .line {
+      background: rgb(210, 94, 94);
+      width: 37%;
+      height: 1%;
+      border-radius: 22%;
+      margin-left: 31%;
+      margin-bottom: 4%;
+
+    }
+
+
+    .bo {
+      position: absolute;
+
+    }
+
+    .pic {
+      margin-top: 4%;
+      padding-left: 9%;
+    }
+
+    .pic img {
+      width: 78%;
+      box-shadow: 0px 25px 42px black;
+
+    }
+
+    .conclu {
+      position: absolute;
+      top: 39%;
+      left: 36%;
+      width: 97%;
+      background-color: white;
+      border-radius: 3px;
+      text-align: left;
+      box-shadow: 0px 25px 42px black;
+
+
+
+    }
+
+    .conclu h1 {
+      position: relative;
+
+      font-size: 34px;
+      font-weight: bold;
+      left: 6%;
+      margin-top: 4%;
+
+
+    }
+
+    .conclu p {
+
+      font-size: 20px;
+
+
+      padding: 4%;
+    }
+  </style>
+</head>
+<header>
+  <nav>
+    <div class=logo21><a href="index.html" style="text-decoration: none;"><img src="images/logo.png" alt="Logo"
+          class="logo"><label id="logo">Indoor Bonsai</label></a></div>
+    <ul>
+      <li><a class="anav" href="index.html">Home</a></li>
+      <li><a class="anav" href="product.html">Products</a></li>
+      <li><a class="anav activee" href="blog.html">Blog</a></li>
+      <li><a class="anav" href="research.html">Research</a></li>
+      <li><a class="anav" href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+
+  <!----//section starts here!!---->
+  <section>
+    <div>
+      <img src="images/bgg.jpg" style="width: 100%; position: relative; top: 100px;">
+      <h1 style="position: absolute;left: 710px; top:150px; font-size: 33px;font-weight: 500; font-family: Roboto;">Blog
+      </h1>
+    </div>
+
+    <!--Article start here!!-->
+    <div class="ar-box">
+      <div class="title">
+        <h1>Articles</h1>
+        <p>Best place to learn about technology is here!!</p>
+      </div>
+    </div>
+    <!--main blog starts here-->
+    <div class="rec">
+      <div class="container">
+        <div class="box">
+          <h3>About Technology</h3>
+          <div class="line"></div>
+          <!--accordion starts here-->
+          <button class="accordion">
+            <img src="images/70.png" alt="">
+          </button>
+          <!--content paragraph  starts  here-->
+          <div class="content">
+            <p>Technology is the development of scientific knowledge and systematic techniques to make human life more
+              easier than it is .Technology is everywhere ,now-a-days you can see it anywhere u go like in your house
+              ,in your workplace or roads etc and it is changing and affecting the environment we live in .So, it is
+              also called change and manipulation of human environment.
+              We have been attached to the technology so much that it's in our daily lives. And why wouldn't we be , as
+              starting of making technology was started by our ancestors way back by inventing wheels for their carts ,
+              clock, or creating waterwheels for grinding grain and many more .And now we have modern technologies like
+              air conditioners, computers, drones , etc ,which in my thoughts wouldn't be invented if
+              their wasn't any ancient technology .so, the ancient technology is also the beginning of the human
+              species. Whereas modern technology is like the prosperity
+              and new knowledge .It is improving in recent decades and real advanced technologies are getting generated
+              , making our work easier than we could ever imagine .This has paved us to choose a path which needs less
+              effort , help us become independent .
+            </p>
+            <br>
+            <div style="color:blueviolet;font-size: 120%;">1 February</div>
+            <div class="link">-By admin</div>
+          </div>
+        </div>
+        <div class="box">
+
+          <h3>Positive Impacts</h3>
+          <div class="line"></div>
+          <!--accordion starts here-->
+          <button class="accordion">
+            <img src="images/73.png" alt="">
+          </button>
+          <!--content paragraph  starts  here-->
+          <div class="content">
+            <p>Take a look at positive ways on how the technology has helped us:-</p>
+            <p> 1 . It has made analyzation and collection of datas easier and accurate data can be shared throughout
+              the organization.</p>
+            <p> 2 . The invention of health apps have helped people to track diets ,have access of information about
+              their health.</p>
+            <p> 3 . It has enhanced online shopping which doesn't consume time and is easier to find items.</p>
+            <p> 4 . Students can gain knowledge easily through online classes.</p>
+            <p> 5 . It has made travelling safe and made it easier to get from one place to another.</p>
+            <p> 6 . Robotics are being used in manufacturing process as they are programmed to have more speed and
+              quality this is beneficial for bussiness environment.</p>
+            <p> 7 . The use of virtual personal assistants (Artifical intelligence) like Alexa , Siri have further
+              advanced the life of humans.</p>
+            <br>
+            <div style="color:blueviolet;font-size: 120%;">1 February</div>
+            <div class="link">-By admin</div>
+          </div>
+
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <hr style="height: 5px;">
+      <div class="container">
+        <div class="box">
+          <h3>Negative Impact</h3>
+          <div class="line"></div>
+          <!--accordion starts here-->
+          <button class="accordion">
+            <img src="images/74.png" alt="">
+          </button>
+          <!--content paragraph  starts  here-->
+          <div class="content">
+            <p>Take a look at negative ways on how the technology has affected us negatively:-</p>
+            <p>1 . Smartphones , computers ,and other digital applications have caused eyestrain symtoms like blurred
+              vision , dry eyes.</p>
+            <p> 2 . Technology may be the major reason why a person may have a bad posture because it may put
+              unnecessary amount of pressure on neck and spine.</p>
+            <p> 3 . The blue light from the devices disturbs our body which makes us harder to fall asleep.</p>
+            <p> 4 . It causes many health and physical effects like obesity , cardiovascular diseases due to lack of
+              physical movements.</p>
+            <P> 5 . As people spend more time in their devices , alot of people have found not to have social skills.
+            </P>
+            <p> 6 . Due to negative facts from social media , internet the rate of depression and anxiety among teens
+              has drastically increased.</p>
+            <P> 7 . People are becoming way too dependent on their gadget , which is reducing their attention span.</p>
+            <br>
+            <div style="color:blueviolet;font-size: 120%;">1 February</div>
+            <div class="link">-By admin</div>
+
+          </div>
+        </div>
+        <div class="box">
+          <h3>Use of technology in bonsai</h3>
+          <div class="line"></div>
+          <!--accordion starts here-->
+          <button class="accordion">
+            <img src="images/Screenshot (93).png" alt="">
+          </button>
+          <!--content paragraph  starts  here-->
+          <div class="content">
+            <p>There are alot of knowledge that we can learn from technology .As teachnology has made alot impact on our
+              life , so there's no way it hasn't caught up with bonsai plants .
+              Bonsai plant is is mainly know for its beautiful breathtaking sculpture and indicating the beauty of
+              nature.
+              This plant helps to uplift the beauty of your home and look appealing .So many people are looking forward
+              to have bonsai in their home .And teachnology
+              have helped alot while selling bonsai.Some are given below:-</p>
+            <p>1 . Internet can have information about what type of bonsai the customers are looking for , from which
+              the sellers can know which sale they should focus on for profitable market.</p>
+            <p>2 . Due to social media , the bonsai sellers can write and post about their products which helps them to
+              attract and engage with new customers.</p>
+            <p>3 . Alot of customer makes alot research about the bonsai before buying it , and because of the
+              sufficient information ,the customers end up purchasing it.
+            </p>
+            <p>4 . If the customer has any question they could directly ask the sellers via emails or phone numbers.</p>
+
+            <p>5 . The website made by the bonsai sellers provides all information needed for any customer without
+              needing to search anywhere.</p>
+
+            <br>
+            <div style="color:blueviolet;font-size: 120%;">1 February</div>
+            <div class="link">-By admin</div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <!--Conclusion starts here-->
+
+    <div class="bo">
+      <div class="pic">
+        <img src="images/Screenshot (89).png" alt="">
+      </div>
+      <div class="conclu">
+        <h1>Conclusion</h1>
+        <p>Bonsai is an art that needs to be studied and taken care of, it needs a lot of work for it to look like a
+          beautiful breathtaking sculpture. It is a representation
+          of nature in the form of tree. The bonsai has a lot of benefit with it as it is an aesthetic home decor and
+          has health and psychological a lot of which more and more
+          people are bringing bonsai in their life. And this is also possible because of the advance technology that we
+          have now. The impact of technology is expanding with it having positive and negative impacts.
+          Though the technology has made our daily lives easier, changed the world for best and though it is really
+          effective and evolving in faster rate. We need to remember that it still has some risks with it.
+          So, if the business-related things like websites are done while taking technology as a main point, I think it
+          can grow in a fast rate and have a great future with it .</p>
+      </div>
+    </div>
+
+
+
+
+    <!--coding for javascipt starts here-->
+    <script>
+      var accordion = document.getElementsByClassName("accordion");
+
+      var i;
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+
+  </section>
+</body>
+<!-- This is the footer section -->
+<footer style="margin-top:650px;">
+  <div class="footer1" style="display: flex;justify-content: space-around;">
+    <div style="width:300px; display:inline-block;padding:5px; margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 400;">Contact Us</h3>
+      </div>
+      <div>
+        <ol style="list-style: none; line-height: 33px;">
+          <li class="foot">Phone no: +977 9868730025</a></li>
+          <li class="foot">Address: Old-Baneshwor, Kathmandu</li>
+          <li class="foot">Email: bidhanshrestha2019@gmail.com</li>
+        </ol>
+      </div>
+      <div class="button"><a href="contact.html" class="contactt" target="_blank">Contact Us</a></div>
+    </div>
+    <div style="width:200px; display: inline-block;padding:5px;margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="text-align: center; color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 400;">Quick Links</h3>
+      </div>
+      <div>
+        <ol style="text-align: center; list-style: none; line-height: 33px;">
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="index.html">Home</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="product.html">Products</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="blog.html">Blog</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="research.html">Research</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="about.html">About Us</a></li>
+        </ol>
+      </div>
+    </div>
+    <div style="width:500px; display: inline-block;padding:5px;margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="text-align: center; color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 600;">Indoor Bonsai</h3>
+      </div>
+      <div style="text-align: left; color: rgb(80, 80, 80); line-height: 30px;">
+        <p style="font-size: 14px;">Indoor Bonsai is a unique platform for selling premium bonsais of various species,
+          ages, and styles. It is the first commercial site in Nepal, specifically dedicated to sell bonsai and related
+          products. Designing bonsais is a long-term process which requires lot of patience, care, techniques, and
+          creativity.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer2">
+    <p style="padding-top:30px;font-size: 14px;">&#169; Indoor Bonsai. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

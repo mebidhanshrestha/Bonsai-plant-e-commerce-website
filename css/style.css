@@ -1,0 +1,53 @@
+.top{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-image: url(../img/testimonials.jpeg);
+    text-align: center;
+}
+
+
+h2{
+    background-color: yellowgreen;
+    height: 80px;
+    text-align: center;
+}
+
+table,th,td{
+    width: 95%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    
+    
+}
+
+
+
+
+#amazon{
+
+    width: 600px;
+    height: 355px;
+    padding: 15px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+#amcompare{
+    width: 600px;
+    height: 355px;
+    padding: 15px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+#bnav{
+    width: 600px;
+    height: 
+
+}
+
+#wnav{
+    width: 600px;
+}
+

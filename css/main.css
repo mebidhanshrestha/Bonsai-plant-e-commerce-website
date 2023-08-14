@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: #3C6255;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    padding :0px 50px 0px 100px;
+    z-index: 2;
+}
+.logo{
+    height: 70px;
+    width: 76px;
+}
+#logo{
+    color: rgb(249, 249, 102);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    bottom: 26px;
+    left: 15px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 0px 12px;
+}
+.anav{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 40;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.anav:hover,.active{
+    color: black;
+    background-color: rgb(236, 240, 227);
+}
+.Bonsai{
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #3C6255;
+}
+.h-products{
+    color: rgb(46, 43, 43);
+    text-align: center;
+    margin-top: 70px;
+    font-family: Libre Baskerville,serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.h{
+    text-align: center;
+    width: 700px;
+    color: rgb(88, 81, 81);
+    font-family: Libre Baskerville,serif;
+    font-size: 26px;
+    font-weight: 400;
+    position: absolute;
+    top:200px;
+    right: 400px;
+}
+span{
+    color: rgb(195, 0, 0);
+}
+.button{
+    margin-top: 30px;
+}
+.bidhan {
+    color: #ffffff;
+    background-color: #3C6255;
+    font-size: 25px;
+    border:0px;
+    border-radius: 70px;
+    padding: 15px 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bidhan:hover {
+    background-color: rgb(236, 240, 227);
+    color: #000;
+}
+.goldenhead{
+    width: 500px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.gp{
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+    line-height: 35px;
+}
+#golden{
+    width:600px;
+
+}
+#spec{
+    margin-top: 50px;
+}
+#spec-h3{
+    font-size: 30px;
+    color: yellow;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.spec{
+    color: yellow;
+    font-size: 25px;
+    line-height: 40px;
+}
+.chinese{
+    width: 620px;
+    position: relative;
+    top: 400px;
+}
+#chi-head{
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 1em;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#chi-p{
+    color: #fff;
+    text-align: right;
+    font-size: 30px;
+    line-height: 35px;
+}
+.chinesepic{
+    height: 630px;
+    width: 800px;
+    bottom: 160px;
+}
+#chi-spec{
+    color: yellow;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: right;
+}
+.chii{
+    color: yellow;
+    width: 608px;
+    line-height: 40px;
+}
+.p-chi{
+    text-align: right;
+    font-size: 25px;
+}
+.button{
+    margin-top: 30px;
+}
+.bid {
+    color: #ffffff;
+    background-color: #3C6255;
+    display: inline-block;
+    font-size: 20px;
+    border:0px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.bid:hover {
+    background-color: #2e4e43;
+    color: #fff;
+}
+
+#testi{
+    font-size: 40px;
+    font-weight: 350;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+}
+.testi{
+    background-color: #ffffff;
+    width: 320px;
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin: 0 30px;
+}
+.te{
+    font-size: 18px;
+    font-weight: 600;
+    font-family:serif;
+    margin: 15px 0 3px;
+}
+.tes{
+    color: #90bf2a;
+    font-size: 14px;
+    font-weight: 400;
+    font-family:Helvetica;
+}
+.test{
+    padding: 20px;
+    line-height: 33px;
+}
+
+.footer1{
+    height: 300px;
+    background-color: rgb(233, 238, 235);
+}
+.foot{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    margin: 0;
+}
+.contactt{
+    color: #ffffff;
+    background-color: #3C6255;
+    font-size: 17px;
+    border:0px;
+    border-radius: 70px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contactt:hover {
+    color: #000;
+}
+
+.footer2{
+    background-color:rgb(233, 238, 235);
+    height: 80px;
+    text-align: center;
+}
+

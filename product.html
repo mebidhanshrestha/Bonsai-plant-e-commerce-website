@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="Bidhan Shrestha, Prabin GC, Sumi Lamichane, Suzzan Adhikari, Rojama Shakya.">
+	<meta name="description" content="About Bonsai Plant">
+	<meta name="keyword" content="Indoor Bonsai">
+  <title>Products</title>
+  <link rel="icon" href="images/icon.png">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff;
+    }
+
+    p {
+      font-family: "Poppins", Helvetica, Arial, sans-serif;
+    }
+
+    nav {
+      height: 90px;
+      width: 100%;
+      background-color: #3C6255;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0px 50px 0px 100px;
+      z-index: 2;
+    }
+
+    .logo {
+      height: 70px;
+      width: 76px;
+      position: relative;
+      top: 20px;
+      right: 5px;
+    }
+
+    #logo {
+      color: rgb(249, 249, 102);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      font-weight: 500;
+      position: relative;
+      bottom: 30px;
+      left: 90px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      margin: 0px 12px;
+    }
+
+    .anav {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 40;
+      letter-spacing: 1px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .anav:hover,
+    .active {
+      color: black;
+      background-color: rgb(236, 240, 227);
+    }
+
+    :root {
+      --blackRussian: #1f1f26;
+      --greyWhite: #f9f9f9;
+      --pacificBlue: #1ca9c9;
+    }
+
+    .hero {
+      width: 100%;
+    }
+
+    .row {
+      width: 90%;
+      height: 100vh;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product img {
+      height: 19vh;
+      margin-bottom: 9px;
+      cursor: pointer;
+      opacity: 0.6;
+      column-width: 100%;
+      margin-block: 5%;
+      margin-inline: -20%;
+      border: 15px solid white;
+    }
+
+    .row {
+      width: 90%;
+      height: 100vh;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .col {
+      flex-basis: 45%;
+    }
+
+    .slider {
+      height: 80vh;
+      display: flex;
+    }
+
+    .product img {
+      height: 19vh;
+      margin-bottom: 9px;
+      cursor: pointer;
+      opacity: 0.6;
+      column-width: 100%;
+      margin-block: 5%;
+      margin-inline: -20%;
+      border: 15px solid white;
+    }
+
+    .product img:hover {
+      opacity: 1;
+    }
+
+    .preview img {
+      height: 100%;
+      background: White;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      background: #008000;
+      width: fit-content;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 5px;
+    }
+
+    h2 {
+      font-size: 45px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      color: #fe980f;
+      font-size: 26px;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    input {
+      width: 30px;
+      border: 1px solid #ccc;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    button {
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      border: 0;
+      border-radius: 5px;
+      background: #fe980f;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    button .fa {
+      margin-right: 10px;
+    }
+
+    .related {
+      width: 90%;
+      margin: 0 auto 40px;
+    }
+
+    .related .row {
+      width: 100%;
+      height: auto;
+    }
+
+    .columns {
+      flex-basis: 42%;
+      height: 1000%;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      padding: 5rem 1rem;
+    }
+
+    .text {
+      padding: 0px 0;
+      font-size: 20px;
+      font-weight: 400;
+      opacity: 1;
+      margin-left: 4%;
+    }
+
+    .btn {
+      margin: 25px 0;
+      text-transform: uppercase;
+      background: var(--blackRussian);
+      color: #fff;
+      border: 1.5px solid var(--blackRussian);
+      font-size: 14px;
+      padding: 12px 26px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .head-title {
+      font-size: 42px;
+      text-transform: capitalize;
+      line-height: 1.5;
+      padding: 20px 0;
+      font-family: 'Fira Sans', sans-serif;
+      word-spacing: 7px;
+      margin-left: 21%;
+
+    }
+
+    .trend-item {
+      background: whitesmoke;
+      margin: 40px 0;
+      padding: 30px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .trend-item:nth-child(3) img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .trend-item-content {
+      padding: 16px 0;
+      line-height: 1.9;
+    }
+
+    .trend-item-content h4:first-of-type {
+      font-size: 22px;
+      font-family: 'Fira Sans', sans-serif;
+      opacity: 0.8;
+    }
+
+    .trend-item-content h4:last-of-type {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .chevron-icon {
+      background: var(--blackRussian);
+      color: #fff;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 16px auto 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.4s ease-in-out;
+    }
+
+    .chevron-icon:hover {
+      background: var(--pacificBlue);
+    }
+
+    .underline {
+      height: 5px;
+      width: 80%;
+      background: var(--greyWhite);
+      margin: 0 auto;
+      border-radius: 15px
+    }
+
+    .featured-btns button:last-child {
+      background: white;
+      color: var(--blackRussian);
+      margin-left: 10px;
+    }
+
+    .featured-btns button:last-child:hover {
+      color: var(--pacificBlue);
+      border-color: var(--pacificBlue);
+    }
+
+    .featured-item>div {
+      padding: 24px;
+    }
+
+    .featured-item .item-price {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .featured-item {
+      margin-bottom: 36px;
+    }
+
+    .featured-item:nth-child(even) {
+      background: ghostwhite;
+    }
+
+    .featured-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .blog-item {
+      background: ghostwhite;
+      margin: 30px 0;
+    }
+
+    .blog-item:last-of-type {
+      margin-bottom: 100;
+    }
+
+    .blog-item-img {
+      overflow: hidden;
+      height: auto;
+    }
+
+    .blog-item-img img {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .blog-item-img:hover img {
+      transform: scale(1.4);
+    }
+
+    .blog-item-content {
+      padding: 28px;
+    }
+
+    .blog-item-content a {
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500;
+      font-family: 'Fira Sans', sans-serif;
+      display: block;
+      padding: 6px 0;
+      color: var(--blackRussian);
+    }
+
+    .trend-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px;
+    }
+
+    .trend-item {
+      margin: 0;
+    }
+
+    .featured-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .featured-item:nth-child(even) .featured-item-img {
+      order: 2;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 16px;
+    }
+
+    .container {
+      padding: 5rem 10rem;
+    }
+
+    .trend-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .featured-item {
+      grid-gap: 20px;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: lightgrey;
+    }
+
+    .photo {
+      margin: 10px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .centered {
+      position: absolute;
+      top: 13%;
+      left: 45%;
+      font-size: 25px;
+    }
+
+    .card__badge .badge {
+      border-radius: 0;
+      font-size: 13px;
+      background-color: red;
+      font-weight: bold;
+      border: none;
+    }
+
+    .CountDown {
+      color: #fe980f;
+      font-size: 17px;
+      font-weight: bold;
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer1 {
+      height: 300px;
+      background-color: rgb(233, 238, 235);
+    }
+
+    .foot {
+      font-size: 14px;
+      text-decoration: none;
+      color: rgb(80, 80, 80);
+      margin: 0;
+    }
+
+    .contactt {
+      color: #ffffff;
+      background-color: #3C6255;
+      font-size: 17px;
+      border: 0px;
+      border-radius: 70px;
+      padding: 10px 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .contactt:hover {
+      color: #000;
+    }
+
+    .footer2 {
+      background-color: rgb(233, 238, 235);
+      height: 80px;
+      text-align: center;
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<header>
+  <nav>
+    <div class=logo21><a href="index.html" style="text-decoration: none;"><img src="images/logo.png" alt="Logo"
+          class="logo" id="logoo"><label for="logoo" id="logo">Indoor Bonsai</label></a></div>
+    <ul>
+      <li><a class="anav" href="index.html">Home</a></li>
+      <li><a class="anav active" href="product.html">Products</a></li>
+      <li><a class="anav" href="blog.html">Blog</a></li>
+      <li><a class="anav" href="research.html">Research</a></li>
+      <li><a class="anav" href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div>
+    <img src="images/bgg.jpg" style="width: 100%; position: relative; top: 100px;">
+    <h1 style=" position: absolute;left: 555px; top:150px; font-size: 33px;font-weight: 500; font-family: Roboto;">
+      Products</h1>
+  </div>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Indoor Bonsai</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1 class="head-title">
+      Welcome to Indoor Bonsai House
+    </h1>
+    <p class="text">
+      Indoor bonsai are bonsai cultivated for the indoor environment. Traditionally, bonsai are temperate climate trees
+      grown outdoors in containers. Tropical and sub-tropical tree species can be cultivated to grow and thrive indoors,
+      with some suited to bonsai aesthetics shaped as traditional outdoor or wild bonsai.
+
+    <div class="hero">
+      <div class="row">
+        <div class="col">
+
+          <div class="slider">
+            <div class="product">
+
+              <img src="images/product1.png" alt="" onclick="clickme(this)">
+              <img src="images/product2.png" alt="" onclick="clickme(this)">
+              <img src="images/product3.png" alt="" onclick="clickme(this)">
+              <img src="images/product4.png" alt="" onclick="clickme(this)">
+
+            </div>
+            <div class="preview">
+              <img src="images/product1.png" id="imagebox" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+
+          <div class="content">
+            <p class="brand">Species: Chinese Elm </p>
+            <h2>Chinese Elm Tree</h2>
+
+            <p class="price">Species: Chinese ELm </p>
+            <p>Size: <select name="size">
+
+                <option value="select size">Select Height</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+
+              </select>
+            </p>
+            <p><del> NPR 1500.00</del> <ins>(Save- 20%) NPR 1200.00</ins>
+            </p>
+            <p class="CountDown"> Hurry! SaleEnds In:</p>
+            <p id="demo"></p>
+            <script>
+
+              var countDownDate = new Date("March 5, 2023 15:37:25").getTime();
+              var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("demo").innerHTML = days + "(d) " + hours + "  (h)"
+                  + minutes + "  (m)" + seconds + "  (s)";
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+            </script>
+            <p>Quantity: <input type="text" value="1"></p>
+            <button type="button">
+              <i class="fa fa-shopping-cart"></i>
+              ADD TO CART</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section class="trend">
+      <div class="container">
+        <div class="title">
+          <h4>Trending now</h4>
+          <h2>Best Selling Product</h2>
+        </div>
+
+        <div class="trend-grid">
+          <div class="trend-item">
+            <img src="images/best-selling-1.png" alt="best product">
+            <div class="trend-item-content">
+              <h4>Chinese Elm Tree</h4>
+              <h4><del> NPR 6000.00</del> <ins>(Save- 20%) NPR 4800.00</ins>
+              </h4>
+              <span class="chevron-icon">
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="trend-item">
+            <img src="images/best-selling-2.png" alt="best product">
+            <div class="trend-item-content">
+              <h4>Fidreus</h4>
+              <h4><del>NPR 2000.00</del><ins>(Save- 10%) NPR 1800.00</ins>
+              </h4>
+              <span class="chevron-icon">
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+
+
+          <div class="trend-item">
+            <img src="images/Image3.png" alt="best product">
+            <div class="trend-item-content">
+              <h4>Juniper Juniperus with creamic pot</h4>
+              <h4><del>NPR 3000.00</del><ins>(Save- 15%) NPR 2550.00</ins></h4>
+              <span class="chevron-icon">
+                <i class="fas fa-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="underline"></div>
+
+
+    <section class="featured">
+      <div class="container">
+        <div class="featured-item">
+          <div class="featured-item-img">
+            <img src="images/product6.png" alt="feature image">
+          </div>
+          <div class="featured-item-content">
+            <div class="title">
+              <h4>featured product </h4>
+              <h2> Jade Bonsai</h2>
+              <p class="item-price"><del>NPR 2000.00</del><ins>(Save- 10%) NPR 1800.00</ins></p>
+            </div>
+            <p class="text">
+              Crassula ovata, commonly known as jade plant, lucky plant, money plant or money tree, is a succulent plant
+              with small pink or white flowers that is native to the KwaZulu-Natal and Eastern Cape provinces of South
+              Africa, and Mozambique; it is common as a houseplant worldwide
+            </p>
+            <div class="featured-btns">
+              <button type="button" class="btn">Explore</button>
+              <button type="button" class="btn">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-item-img">
+            <img src="images/product5.png" alt="feature image">
+          </div>
+          <div class="featured-item-content">
+            <div class="title">
+              <h4>Featured Product </h4>
+              <h2>Ficus microcarpa</h2>
+              <p class="item-price"><del>NPR 5000.00</del><ins>(Save- 10%) NPR 4500.00</ins></p>
+            </div>
+            <p class="text">
+              Ficus microcarpa, also known as Chinese banyan, Malayan banyan, Nepaln laurel, curtain fig, or gajumaru,
+              is a tree in the fig family Moraceae. It is native in a range from China through tropical Asia and the
+              Caroline Islands to Australia.
+
+            </p>
+            <div class="featured-btns">
+              <button type="button" class="btn">Explore</button>
+              <button type="button" class="btn">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-item-img">
+            <img src="images/product10.png" alt="feature image">
+          </div>
+          <div class="featured-item-content">
+            <div class="title">
+              <h4>Featured Product </h4>
+              <h2>Snowrose</h2>
+              <p class="item-price"><del>NPR 4000.00</del><ins>(Save- 10%) NPR 3600.00</ins></p>
+            </div>
+            <p class="text">
+              Serissa is a genus of flowering plants in the family Rubiaceae, containing only one species, Serissa
+              japonica. It is native to open sub-tropical woodlands and wet meadows in southeast Asia, from Nepal, and
+              China to Japan.
+            </p>.
+            <div class="featured-btns">
+              <button type="button" class="btn">Explore</button>
+              <button type="button" class="btn">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="featured-item-img">
+            <img src="images/product7.png" alt="feature image">
+          </div>
+          <div class="featured-item-content">
+            <div class="title">
+              <h4>Featured Product </h4>
+              <h2>Japanese maple
+                ACER PALMATUM</h2>
+              <p class="item-price"><del>NPR 5000.00</del><ins>(Save- 10%) NPR 4500.00</ins></p>
+            </div>
+            <p class="text">
+              The Japanese Maple, otherwise known as Acer palmatum, is originally from Japan, China, and Korea. It owes
+              its botanical name to the hand-shaped leaves with five pointed lobes. Palma is Latin for palm, as in the
+              palm of your hand.
+            </p>
+            <div class="featured-btns">
+              <button type="button" class="btn">Explore</button>
+              <button type="button" class="btn">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="title">
+          <h4>Daily Update</h4>
+          <h2>Latest Products</h2>
+        </div>
+
+        <div class="blog-grid">
+          <div class="blog-item">
+            <div class="blog-item-img">
+              <img src="images/blog-img-1.jpg" alt="blog image">
+            </div>
+            <div class="blog-item-content">
+              <a href="#">Creative ideas for decoration</a>
+              <div>
+                <span>January 11 | Indoor | Bonsai</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-item-img">
+              <img src="images/product8.png" alt="blog image">
+            </div>
+            <div class="blog-item-content">
+              <a href="#">Decorate your home with Indoor Bonsai.</a>
+              <div>
+                <span>January 25 | Indoor |Bonsai</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-item">
+            <div class="blog-item-img">
+              <img src="images/Product55.png" alt="blog image">
+            </div>
+            <div class="blog-item-content">
+              <a href="#"> Indoor Bonsai With desired Pot</a>
+              <div>
+                <span>January 28 | Indoor | Bonsai</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <script>
+      function clickme(smallImg) {
+
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+
+      }
+    </script>
+  </body>
+
+  </html>
+</body>
+<footer style="margin-top:50px;">
+  <div class="footer1" style="display: flex;justify-content: space-around;">
+    <div style="width:300px; display:inline-block;padding:5px; margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 400;">Contact Us</h3>
+      </div>
+      <div>
+        <ol style="list-style: none; line-height: 33px;">
+          <li class="foot">Phone no: +977 9868730025</a></li>
+          <li class="foot">Address: Old-Baneshwor, Kathmandu</li>
+          <li class="foot">Email: bidhanshrestha2019@gmail.com</li>
+        </ol>
+      </div>
+      <div class="button"><a href="contact.html" class="contactt" target="_blank">Contact Us</a></div>
+    </div>
+    <div style="width:200px; display: inline-block;padding:5px;margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="text-align: center; color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 400;">Quick Links</h3>
+      </div>
+      <div>
+        <ol style="text-align: center; list-style: none; line-height: 33px;">
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="index.html">Home</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="product.html">Products</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="blog.html">Blog</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="research.html">Research</a></li>
+          <li><a style="color: rgb(80, 80, 80);" class="foot" href="about.html">About Us</a></li>
+        </ol>
+      </div>
+    </div>
+    <div style="width:500px; display: inline-block;padding:5px;margin:10px;position: relative; top: 30px;">
+      <div>
+        <h3 style="text-align: center; color: rgb(80, 80, 80); margin-bottom:20px;font-weight: 600;">Indoor Bonsai</h3>
+      </div>
+      <div style="text-align: left; color: rgb(80, 80, 80); line-height: 30px;">
+        <p style="font-size: 14px;">Indoor Bonsai is a unique platform for selling premium bonsais of various species,
+          ages, and styles. It is the first commercial site in Nepal, specifically dedicated to sell bonsai and related
+          products. Designing bonsais is a long-term process which requires lot of patience, care, techniques, and
+          creativity.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer2">
+    <p style="padding-top:30px;font-size: 14px;">&#169; Indoor Bonsai. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>
